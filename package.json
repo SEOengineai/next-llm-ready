@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Make your Next.js content AI-ready with copy-to-LLM buttons, markdown conversion, Table of Contents, and LLM-friendly endpoints",
   "author": "SEO Engine <hello@seoengine.ai>",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/SEOengineai/next-llm-ready"
   },
-  "homepage": "https://github.com/SEOengineai/next-llm-ready",
+  "homepage": "https://seoengine.ai",
   "bugs": {
     "url": "https://github.com/SEOengineai/next-llm-ready/issues"
   },
