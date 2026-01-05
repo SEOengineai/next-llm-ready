@@ -1,6 +1,18 @@
 # @seoengine.ai/next-llm-ready
 
 <p align="center">
+  <a href="https://seoengine.ai/?ref=next-llm-ready">
+    <img src="https://img.lightshot.app/vlRu5KRPTXq2f0QPxeXO2A.png" alt="SEO Engine - AI-Powered SEO Platform" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>🚀 Built by <a href="https://seoengine.ai/?ref=next-llm-ready">SEO Engine</a></strong> — The AI-powered platform that helps you rank higher, drive more traffic, and convert visitors into customers. <a href="https://seoengine.ai/?ref=next-llm-ready">Try it free →</a>
+</p>
+
+---
+
+<p align="center">
   <img src="https://img.shields.io/npm/v/@seoengine.ai/next-llm-ready.svg" alt="npm version" />
   <img src="https://img.shields.io/npm/dm/@seoengine.ai/next-llm-ready.svg" alt="npm downloads" />
   <img src="https://img.shields.io/github/license/SEOengineai/next-llm-ready.svg" alt="license" />
