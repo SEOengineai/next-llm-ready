@@ -1,5 +1,8 @@
 {
-  "name": "next-llm-ready",
+  "name": "@seoengine.ai/next-llm-ready",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.0",
   "description": "Make your Next.js content AI-ready with copy-to-LLM buttons, markdown conversion, Table of Contents, and LLM-friendly endpoints",
   "author": "SEO Engine <hello@seoengine.ai>",

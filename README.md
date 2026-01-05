@@ -1,8 +1,8 @@
-# next-llm-ready
+# @seoengine.ai/next-llm-ready
 
 <p align="center">
-  <img src="https://img.shields.io/npm/v/next-llm-ready.svg" alt="npm version" />
-  <img src="https://img.shields.io/npm/dm/next-llm-ready.svg" alt="npm downloads" />
+  <img src="https://img.shields.io/npm/v/@seoengine.ai/next-llm-ready.svg" alt="npm version" />
+  <img src="https://img.shields.io/npm/dm/@seoengine.ai/next-llm-ready.svg" alt="npm downloads" />
   <img src="https://img.shields.io/github/license/SEOengineai/next-llm-ready.svg" alt="license" />
   <img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Next.js-13%2B-black.svg" alt="Next.js" />
@@ -30,24 +30,24 @@ Large Language Models (LLMs) like ChatGPT, Claude, and Gemini are increasingly u
 ### Installation
 
 ```bash
-npm install next-llm-ready
+npm install @seoengine.ai/next-llm-ready
 # or
-yarn add next-llm-ready
+yarn add @seoengine.ai/next-llm-ready
 # or
-pnpm add next-llm-ready
+pnpm add @seoengine.ai/next-llm-ready
 ```
 
 ### Import Styles
 
 ```tsx
 // app/layout.tsx or _app.tsx
-import 'next-llm-ready/styles.css';
+import '@seoengine.ai/next-llm-ready/styles.css';
 ```
 
 ### Add Copy Button
 
 ```tsx
-import { CopyButton } from 'next-llm-ready';
+import { CopyButton } from '@seoengine.ai/next-llm-ready';
 
 export default function Article({ title, content, url }) {
   return (
@@ -90,7 +90,7 @@ export default function Article({ title, content, url }) {
 Simple button that copies content as Markdown to clipboard.
 
 ```tsx
-import { CopyButton } from 'next-llm-ready';
+import { CopyButton } from '@seoengine.ai/next-llm-ready';
 
 <CopyButton
   content={{
@@ -129,7 +129,7 @@ import { CopyButton } from 'next-llm-ready';
 Split button with dropdown menu for copy, view, and download options.
 
 ```tsx
-import { CopyDropdown } from 'next-llm-ready';
+import { CopyDropdown } from '@seoengine.ai/next-llm-ready';
 
 <CopyDropdown
   content={{
@@ -174,7 +174,7 @@ Sticky table of contents with active heading highlighting.
 'use client';
 
 import { useRef } from 'react';
-import { TOC } from 'next-llm-ready';
+import { TOC } from '@seoengine.ai/next-llm-ready';
 
 export default function Article({ content }) {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -223,7 +223,7 @@ export default function Article({ content }) {
 Mobile-optimized TOC with slide-up panel.
 
 ```tsx
-import { TOCMobile } from 'next-llm-ready';
+import { TOCMobile } from '@seoengine.ai/next-llm-ready';
 
 // Same props as TOC
 <TOCMobile contentRef={contentRef} />
@@ -234,7 +234,7 @@ import { TOCMobile } from 'next-llm-ready';
 Visual indicator showing content is AI-ready.
 
 ```tsx
-import { LLMBadge } from 'next-llm-ready';
+import { LLMBadge } from '@seoengine.ai/next-llm-ready';
 
 <LLMBadge
   text="AI Ready"
@@ -255,7 +255,7 @@ Core hook for implementing custom copy functionality.
 ```tsx
 'use client';
 
-import { useLLMCopy } from 'next-llm-ready/hooks';
+import { useLLMCopy } from '@seoengine.ai/next-llm-ready/hooks';
 
 function CustomCopyButton({ content }) {
   const { copy, view, download, markdown, isCopying, isSuccess, error } = useLLMCopy({
@@ -304,7 +304,7 @@ Hook for building custom table of contents.
 ```tsx
 'use client';
 
-import { useTOC } from 'next-llm-ready/hooks';
+import { useTOC } from '@seoengine.ai/next-llm-ready/hooks';
 
 function CustomTOC({ contentRef }) {
   const { headings, activeId, scrollTo } = useTOC({
@@ -354,7 +354,7 @@ Track user interactions with copy functionality.
 ```tsx
 'use client';
 
-import { useAnalytics } from 'next-llm-ready/hooks';
+import { useAnalytics } from '@seoengine.ai/next-llm-ready/hooks';
 
 function TrackedComponent() {
   const { track } = useAnalytics({
@@ -379,7 +379,7 @@ function TrackedComponent() {
 Convert HTML content to clean Markdown.
 
 ```tsx
-import { generateMarkdown } from 'next-llm-ready/server';
+import { generateMarkdown } from '@seoengine.ai/next-llm-ready/server';
 
 const markdown = generateMarkdown({
   title: 'My Article',
@@ -406,7 +406,7 @@ const markdown = generateMarkdown({
 Generate an llms.txt file for your site.
 
 ```tsx
-import { generateLLMsTxt } from 'next-llm-ready/server';
+import { generateLLMsTxt } from '@seoengine.ai/next-llm-ready/server';
 
 const llmsTxt = generateLLMsTxt({
   siteName: 'My Documentation',
@@ -439,7 +439,7 @@ Create an `/llms.txt` endpoint for AI crawlers.
 
 ```tsx
 // app/llms.txt/route.ts
-import { createLLMsTxtHandler } from 'next-llm-ready/api';
+import { createLLMsTxtHandler } from '@seoengine.ai/next-llm-ready/api';
 import { getAllPages } from '@/lib/content';
 
 export const GET = createLLMsTxtHandler({
@@ -460,7 +460,7 @@ export const GET = createLLMsTxtHandler({
 
 ```tsx
 // pages/llms.txt.ts
-import { createLLMsTxtHandler } from 'next-llm-ready/api';
+import { createLLMsTxtHandler } from '@seoengine.ai/next-llm-ready/api';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 const handler = createLLMsTxtHandler({
@@ -506,7 +506,7 @@ export const config = {
 
 ```tsx
 // app/api/markdown/[...slug]/route.ts
-import { createMarkdownHandler } from 'next-llm-ready/api';
+import { createMarkdownHandler } from '@seoengine.ai/next-llm-ready/api';
 import { getPageBySlug } from '@/lib/content';
 
 export const GET = createMarkdownHandler({
@@ -536,7 +536,7 @@ Track how users interact with your AI-ready content.
 ```tsx
 'use client';
 
-import { CopyButton } from 'next-llm-ready';
+import { CopyButton } from '@seoengine.ai/next-llm-ready';
 
 <CopyButton
   content={content}
@@ -554,7 +554,7 @@ import { CopyButton } from 'next-llm-ready';
 
 ```tsx
 // app/api/llm-analytics/route.ts
-import { createAnalyticsApiHandler } from 'next-llm-ready/api';
+import { createAnalyticsApiHandler } from '@seoengine.ai/next-llm-ready/api';
 
 export const POST = createAnalyticsApiHandler({
   onEvent: async (event) => {
@@ -632,7 +632,7 @@ import type {
   CopyButtonProps,
   TOCHeading,
   AnalyticsEvent,
-} from 'next-llm-ready';
+} from '@seoengine.ai/next-llm-ready';
 
 const content: LLMContent = {
   title: 'My Article',
@@ -682,7 +682,7 @@ interface AnalyticsEvent {
 
 ```tsx
 // app/blog/[slug]/page.tsx
-import { CopyDropdown, TOC, LLMBadge } from 'next-llm-ready';
+import { CopyDropdown, TOC, LLMBadge } from '@seoengine.ai/next-llm-ready';
 import { getPost } from '@/lib/posts';
 
 export default async function BlogPost({ params }) {
@@ -729,7 +729,7 @@ export default async function BlogPost({ params }) {
 
 ```tsx
 // app/docs/[...slug]/page.tsx
-import { CopyButton, TOC, TOCMobile } from 'next-llm-ready';
+import { CopyButton, TOC, TOCMobile } from '@seoengine.ai/next-llm-ready';
 import { getDoc } from '@/lib/docs';
 
 export default async function DocPage({ params }) {
@@ -773,7 +773,7 @@ Build completely custom UI with hooks:
 ```tsx
 'use client';
 
-import { useLLMCopy, useTOC } from 'next-llm-ready/hooks';
+import { useLLMCopy, useTOC } from '@seoengine.ai/next-llm-ready/hooks';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function CustomCopyButton({ content }) {
