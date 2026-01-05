@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# NPM credentials (NEVER commit)
+.npmrc
+
+# Build output
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+*.tsbuildinfo
